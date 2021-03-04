@@ -31,7 +31,25 @@ const aboutState = function(page) {
   document.querySelector('#content').innerHTML = `
     <p>This is the about page</p>
   `;
-}
+};
+
+// Contact state
+const contactState = function(page) {
+  document.querySelector('#heading').textContent = 'Contact Us';
+  document.querySelector('#content').innerHTML = `
+    <form>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>E-mail address</label>
+        <input type="email" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  `;
+};
 
 
 
