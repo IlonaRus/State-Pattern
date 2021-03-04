@@ -51,5 +51,12 @@ const contactState = function(page) {
   `;
 };
 
+// Instantiate PageState
+const page = new PageState();
+
+
+// Init the first state
+page.init();
+
 
 
