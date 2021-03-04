@@ -1,3 +1,4 @@
+// Page state
 const PageState = function() {
   let currentState = new homeState(this);
 
@@ -23,6 +24,14 @@ const homeState = function(page) {
     </div>
   `;
 };
+
+// About state
+const aboutState = function(page) {
+  document.querySelector('#heading').textContent = 'About Us';
+  document.querySelector('#content').innerHTML = `
+    <p>This is the about page</p>
+  `;
+}
 
 
 
